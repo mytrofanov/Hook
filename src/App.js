@@ -5,11 +5,10 @@ import Effect from "./effect/effect";
 
 function App() {
 
-
     return (
         <div>
-           <State/>
-            <Effect />
+            <State/>
+            <Effect/>
 
         </div>
     );

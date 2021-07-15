@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from "react";
 
 
-
 function Effect() {
 
     const [type, setType] = useState('users')

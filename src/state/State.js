@@ -36,16 +36,17 @@ function State() {
             date: Date.now()
         }
     )
-    function updateTitle () {
-       setState(prev=>{
-           return {
-               ...state,  //мы просим вернуть весь объект
-               title: 'Новое название' // и изменить только эту строку
-           }
-       })
-    }
-    // обрабатываем объекты
 
+    function updateTitle() {
+        setState(prev => {
+            return {
+                ...state,  //мы просим вернуть весь объект
+                title: 'Новое название' // и изменить только эту строку
+            }
+        })
+    }
+
+    // обрабатываем объекты
 
 
     return (
@@ -59,11 +60,13 @@ function State() {
             <pre>
                 {JSON.stringify(state, null, 2)}
             </pre>
-            <button onClick={()=>setState({title:'новое название'})} //так мы меняем весь объект удаляя дату
-                    className="btn btn-warning">Изменить название</button>
+            <button onClick={() => setState({title: 'новое название'})} //так мы меняем весь объект удаляя дату
+                    className="btn btn-warning">Изменить название
+            </button>
 
             <button onClick={updateTitle} //так мы меняем только название
-                    className="btn btn-success">Правильно изменить название</button>
+                    className="btn btn-success">Правильно изменить название
+            </button>
         </div>
     );
 }
