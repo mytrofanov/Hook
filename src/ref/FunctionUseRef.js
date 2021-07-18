@@ -15,9 +15,14 @@ function UseRefFunction() {
         console.log(inputRef.current.value)
     })
     const focus = () => inputRef.current.focus()
+    const prevValue = useRef('')
+    useEffect( ()=> {
+        prevValue.current = value
+    }, [value])
     return (
         <div>
             <h1>Количество рендеров {renderCount.current}</h1>
+            <h1>Прошлое состояние {prevValue.current}</h1>
             <input ref={inputRef} type="text" onChange={event => setValue(event.target.value)} value={value}/>
             <div>{value}</div>
             <button className="btn btn-success" onClick={focus}>Фокус</button>
