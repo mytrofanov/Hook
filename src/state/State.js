@@ -51,6 +51,7 @@ function State() {
 
     return (
         <div>
+            <h1>Пример Хука useState</h1>
             <h1>Счетчик: {counter}</h1>
             <button onClick={add} className="btn btn-success">Добавить</button>
             <button onClick={reduction} className="btn btn-danger">Удалить</button>

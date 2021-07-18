@@ -43,7 +43,7 @@ function Effect() {
 
     return (
         <div>
-
+            <h1>Пример Хука useEffect</h1>
             <h1>Ресурс: {type}</h1>
             <button onClick={() => setType('users')} className="btn btn-success">Пользователи</button>
             <button onClick={() => setType('todos')} className="btn btn-warning">Todos</button>

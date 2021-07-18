@@ -21,6 +21,7 @@ function UseRefFunction() {
     }, [value])
     return (
         <div>
+            <h1>Пример Хука useRef</h1>
             <h1>Количество рендеров {renderCount.current}</h1>
             <h1>Прошлое состояние {prevValue.current}</h1>
             <input ref={inputRef} type="text" onChange={event => setValue(event.target.value)} value={value}/>
