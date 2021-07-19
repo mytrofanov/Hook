@@ -18,6 +18,9 @@ const Nav = () => {
             <button className="btn btn-white" >
                 <NavLink to="/memo">useMemo</NavLink>
             </button>
+            <button className="btn btn-warning">
+                <NavLink to="/callback">useCallback</NavLink>
+            </button>
         </div>
     )
 }

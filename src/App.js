@@ -6,6 +6,7 @@ import UseRefFunction from "./ref/FunctionUseRef";
 import {BrowserRouter, Route} from "react-router-dom";
 import Nav from "./nav/nav";
 import Memo from "./memo/memo";
+import CallBack from "./callBack/CallBack";
 
 function App() {
     return (
@@ -16,6 +17,7 @@ function App() {
                 <Route path='/effect' component={Effect}/>
                 <Route path='/ref' component={UseRefFunction}/>
                 <Route path='/memo' component={Memo}/>
+                <Route path='/callback' component={CallBack}/>
             </div>
         </BrowserRouter>
     );
