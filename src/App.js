@@ -7,6 +7,7 @@ import {BrowserRouter, Route} from "react-router-dom";
 import Nav from "./nav/nav";
 import Memo from "./memo/memo";
 import CallBack from "./callBack/CallBack";
+import ContextFunction from "./context/context";
 
 function App() {
     return (
@@ -18,6 +19,7 @@ function App() {
                 <Route path='/ref' component={UseRefFunction}/>
                 <Route path='/memo' component={Memo}/>
                 <Route path='/callback' component={CallBack}/>
+                <Route path='/context' component={ContextFunction}/>
             </div>
         </BrowserRouter>
     );
