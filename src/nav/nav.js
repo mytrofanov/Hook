@@ -9,11 +9,14 @@ const Nav = () => {
             <button className="btn btn-warning">
                 <NavLink to="/state">useState</NavLink>
             </button>
-            <button className="btn btn-success">
+            <button className="btn btn-white">
                 <NavLink to="/effect">useEffect</NavLink>
             </button>
             <button className="btn btn-warning">
                 <NavLink to="/ref">useRef</NavLink>
+            </button>
+            <button className="btn btn-white" >
+                <NavLink to="/memo">useMemo</NavLink>
             </button>
         </div>
     )
