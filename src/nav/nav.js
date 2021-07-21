@@ -24,6 +24,9 @@ const Nav = () => {
             <button className="btn btn-white" >
                 <NavLink to="/context">useContext</NavLink>
             </button>
+            <button className="btn btn-warning">
+                <NavLink to="/reducer">useReducer</NavLink>
+            </button>
         </div>
     )
 }
