@@ -10,6 +10,7 @@ import CallBack from "./callBack/CallBack";
 import ContextFunction from "./context/context";
 import ReducerFunction from "./reducer/contextReducer";
 import EffectCounter from "./effect/EffectCounter";
+import CounterVariable from "./reducer/CounterVariable";
 
 function App() {
     return (
@@ -24,6 +25,7 @@ function App() {
                 <Route path='/context' component={ContextFunction}/>
                 <Route path='/reducer' component={ReducerFunction}/>
                 <Route path='/counter' component={EffectCounter}/>
+                <Route path='/counterRed' component={CounterVariable}/>
             </div>
         </BrowserRouter>
     );

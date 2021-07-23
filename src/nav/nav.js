@@ -30,6 +30,9 @@ const Nav = () => {
             <button className="btn btn-white" >
                 <NavLink to="/counter">useEffectCounter</NavLink>
             </button>
+            <button className="btn btn-warning">
+                <NavLink to="/counterRed">Counter with variable</NavLink>
+            </button>
         </div>
     )
 }
