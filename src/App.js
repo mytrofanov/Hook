@@ -9,6 +9,7 @@ import Memo from "./memo/memo";
 import CallBack from "./callBack/CallBack";
 import ContextFunction from "./context/context";
 import ReducerFunction from "./reducer/contextReducer";
+import EffectCounter from "./effect/EffectCounter";
 
 function App() {
     return (
@@ -22,6 +23,7 @@ function App() {
                 <Route path='/callback' component={CallBack}/>
                 <Route path='/context' component={ContextFunction}/>
                 <Route path='/reducer' component={ReducerFunction}/>
+                <Route path='/counter' component={EffectCounter}/>
             </div>
         </BrowserRouter>
     );
