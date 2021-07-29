@@ -11,8 +11,8 @@ import ContextFunction from "./context/context";
 import ReducerFunction from "./reducer/contextReducer";
 import EffectCounter from "./effect/EffectCounter";
 import CounterVariable from "./reducer/CounterVariable";
-import Tasks from "./tasks/tasks";
-import NavHook from "./nav/NavHook";
+
+
 
 function App() {
     return (
@@ -28,8 +28,8 @@ function App() {
                 <Route path='/reducer' component={ReducerFunction}/>
                 <Route path='/counter' component={EffectCounter}/>
                 <Route path='/counterRed' component={CounterVariable}/>
-                <Route path='/tasks' component={Tasks}/>
-                <Route path='/navhook' component={NavHook}/>
+
+
             </div>
         </BrowserRouter>
     );
